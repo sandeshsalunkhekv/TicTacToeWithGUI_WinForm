@@ -67,34 +67,35 @@ If the computer has already marked any of the corners as O, then it checks for t
 ## III. Contents:
 ------------
 This Submission consist of 2 projects - TicTacToeWithUI, and TicTacToeWithUI.Tests.
-	TicTacToeWithUI has the above mentioned files as discussed in Part I (Talking About the UI), and TicTacToeWithUI.Tests contains the Unit Tests built and run for all testable units (methods) for the TicTacToeWithUI Project.
+TicTacToeWithUI has the above mentioned files as discussed in Part I (Talking About the UI), and TicTacToeWithUI.Tests contains the Unit Tests built and run for all testable units (methods) for the TicTacToeWithUI Project.
+
 ------------
 ## IV. Test Cases considered:
 ------------
 (Note: here, X1 refers to the action of setting 1st button on board with X and similar for all others)
-	* Human VS Human:
-		1. X1 -> O2 -> X3 -> O4 -> X5 -> O6 -> X7 -> Message - Player X Won!
-		2. X2 -> O1 -> X3 -> O5 -> X6 -> O9 -> Message - Player O Won!
-		3. X3 -> O2 -> X1 -> O5 -> X8 -> O6 -> X4 -> O7 -> X9 -> Message - The game ended in a DRAW!
-		4. X4 -> O2 -> X6 -> O5 -> X8 -> O1 -> X3 -> O9 -> Message - Player O Won!
-		5. X1 -> O5 -> X9 -> O3 -> X7 -> O8 -> X4 -> Message - Player X Won!
-		6. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O9 -> X6 -> Message - Player X Won!
-		7. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O6 -> X9 -> Message - The game ended in a DRAW!
-		8. X2 -> O1 -> X3 -> O7 -> X4 -> O9 -> O8 -> Player O Won!
-	* Human VS Computer/Machine:
-		 1. X1 -> O5 -> X2 -> O3 -> X7 -> O4 -> X6 -> O9 -> X8 -> Message - The game ended in a DRAW!
-		 2. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O6 -> X9 -> Message - The game ended in a DRAW!
-		 3. X2 -> O5 -> X4 -> O1 -> X9 -> O3 -> X7 -> O8 -> X6 -> Message - The game ended in a DRAW!
-		 4. X3 -> O5 -> X9 -> O6 -> X4 -> O2 -> X8 -> O7 -> X1 -> Message - The game ended in a DRAW!
-		 5. X4 -> O5 -> X8 -> O7 -> X3 -> O9 -> X1 -> O2 -> X6 -> Message - The game ended in a DRAW!
-		 6. X6 -> O5 -> X7 -> O2 -> X8 -> O9 -> X1 -> O4 -> X3 -> Message - The game ended in a DRAW!
-		 7. X7 -> O5 -> X2 -> O4 -> X6 -> O3 -> X1 -> O9 -> X8 -> Message - The game ended in a DRAW!
-		 8. X8 -> O5 -> X1 -> O4 -> X6 -> O9 -> X7 -> O3 -> X2 -> Message - The game ended in a DRAW!
-		 9. X9 -> O5 -> X7 -> O8 -> X2 -> O4 -> X6 -> O3 -> X1 -> Message - The game ended in a DRAW!
-		10. X5 -> O1 -> X6 -> O4 -> X7 -> O3 -> X2 -> O8 -> X9 -> Message - The game ended in a DRAW!
-		11. X5 -> O1 -> X4 -> O6 -> X7 -> O3 -> X9 -> O2 -> Player Computer Won!
-		12. X3 -> O5 -> X4 -> O2 -> X1 -> O8 -> Player Computer Won!
-		13. No Test Cases where Human Wins From AI, Only Draws / Ties Possible for the project!
+* Human VS Human:
+1. X1 -> O2 -> X3 -> O4 -> X5 -> O6 -> X7 -> Message - Player X Won!
+1. X2 -> O1 -> X3 -> O5 -> X6 -> O9 -> Message - Player O Won!
+1. X3 -> O2 -> X1 -> O5 -> X8 -> O6 -> X4 -> O7 -> X9 -> Message - The game ended in a DRAW!
+1. X4 -> O2 -> X6 -> O5 -> X8 -> O1 -> X3 -> O9 -> Message - Player O Won!
+1. X1 -> O5 -> X9 -> O3 -> X7 -> O8 -> X4 -> Message - Player X Won!
+1. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O9 -> X6 -> Message - Player X Won!
+1. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O6 -> X9 -> Message - The game ended in a DRAW!
+1. X2 -> O1 -> X3 -> O7 -> X4 -> O9 -> O8 -> Player O Won!
+* Human VS Computer/Machine:
+1. X1 -> O5 -> X2 -> O3 -> X7 -> O4 -> X6 -> O9 -> X8 -> Message - The game ended in a DRAW!
+1. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O6 -> X9 -> Message - The game ended in a DRAW!
+1. X2 -> O5 -> X4 -> O1 -> X9 -> O3 -> X7 -> O8 -> X6 -> Message - The game ended in a DRAW!
+1. X3 -> O5 -> X9 -> O6 -> X4 -> O2 -> X8 -> O7 -> X1 -> Message - The game ended in a DRAW!
+1. X4 -> O5 -> X8 -> O7 -> X3 -> O9 -> X1 -> O2 -> X6 -> Message - The game ended in a DRAW!
+1. X6 -> O5 -> X7 -> O2 -> X8 -> O9 -> X1 -> O4 -> X3 -> Message - The game ended in a DRAW!
+1. X7 -> O5 -> X2 -> O4 -> X6 -> O3 -> X1 -> O9 -> X8 -> Message - The game ended in a DRAW!
+1. X8 -> O5 -> X1 -> O4 -> X6 -> O9 -> X7 -> O3 -> X2 -> Message - The game ended in a DRAW!
+1. X9 -> O5 -> X7 -> O8 -> X2 -> O4 -> X6 -> O3 -> X1 -> Message - The game ended in a DRAW!
+1. X5 -> O1 -> X6 -> O4 -> X7 -> O3 -> X2 -> O8 -> X9 -> Message - The game ended in a DRAW!
+1. X5 -> O1 -> X4 -> O6 -> X7 -> O3 -> X9 -> O2 -> Player Computer Won!
+1. X3 -> O5 -> X4 -> O2 -> X1 -> O8 -> Player Computer Won!
+1. No Test Cases where Human Wins From AI, Only Draws / Ties Possible for the project!
 ------------
 ## V. How to RUN:
 ------------
