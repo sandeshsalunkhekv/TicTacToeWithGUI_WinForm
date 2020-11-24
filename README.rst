@@ -1,14 +1,21 @@
-# TicTacToeWithGUI_WinForm
-Challenge Name and Description :- Tic-Tac-Toe game - implement the game with the user interface of your choice. Should include human vs human and human vs machine mode.
+.. -*- mode: rst -*-
+**# TicTacToeWithGUI_WinForm**
 
-Solution:
+------------
+**Challenge Name and Description :- Tic-Tac-Toe game - implement the game with the user interface of your choice. Should include human vs human and human vs machine mode.**
+
+------------
+**Solution:**
+
+------------
 NOTE:
 	Assumptions:
 		A. X gets to play the first Move, and in case of Player VS Computer, Player gets to play first move followed By Computer who will mark all its moves by O.
 		B. Players will input only their first names, and none of the player names will be "Computer", as we have used it for player 2 while programming it for Player VS Computer Mode.
 		C. At your end, you also work on latest framework, or at least at .NET Framework 4.5+, as this project is developed on .NET Framework 4.7.2.
 
-I. Talking About the UI:
+=======
+**I. Talking About the UI:**
 
 	Created a C# Project(.NET Framework 4.7.2) for the above problem, with the User Interface being implemented using Windows Forms (Winforms).
 	As a part of the solution, there are 5 forms in all, namely - Introduction, RulesForTicTacToe, TicTacToeLauncherForm, TicTacToeMainForm, & AcceptPlayerNames.
@@ -22,9 +29,10 @@ I. Talking About the UI:
 		If you are playing in Player VS Player Mode, then on click, the game will switch to Player VS Computer Mode and the text will change to Switch to Player VS Player.
 	On the TicTacToeMainForm, there are labels that show whose turn it is, how many games each player won and how many were draws (tie in a game), which gets updated after each game ends.
 	E. AcceptPlayerNames - Here, similar to TicTacToeLauncherForm, we have the text input fields for player 1 and player 2 names, but if you don't enter anything into either these text fields, default names for player 1 and player 2 (i.e., X and O respectively) will be chosen.
-	
-II. Talking About the Thought-Process:
 
+=======	
+**II. Talking About the Thought-Process:**
+~~~~~~~~~~~~
 	In Player VS Player Mode, it is simple and straight forward, the turn switches after each player makes a move and before switching, we check for a winner. If there are consecutive 3 Xs or Os in a row, a column or in any of the diagonals,
 	then we consider it as a win, and display a message that "Player X Won!" or ""Player O Won!" depending upon who has won, and if total number of moves for that game is equal to 9 and still noone has won, it's a draw and display a message that states "This Game ended in a DRAW!".
 	In Player VS Computer Mode, there is an Algorithm known as MiniMax Algorithm, which checks for the current state of the board,
@@ -66,14 +74,15 @@ II. Talking About the Thought-Process:
 			            	__ __ __    __ __ __    __ __ O     O  __ __
 	E. Check for any Open Space :-
 			      If none of the above cases satisfy, then the computer will just choose first open or space available, and mark it as O.
-
-III. Contents:
-	
-	This Submission consist of 2 projects - TicTacToeWithUI, and TicTacToeWithUI.Tests.
+=======	
+**III. Contents:**
+~~~~~~~~~~~~
+This Submission consist of 2 projects - TicTacToeWithUI, and TicTacToeWithUI.Tests.
 	TicTacToeWithUI has the above mentioned files as discussed in Part I (Talking About the UI), and TicTacToeWithUI.Tests contains the Unit Tests built and run for all testable units (methods) for the TicTacToeWithUI Project.
-
-IV. Test Cases considered:
 	
+=======	
+**IV. Test Cases considered:**
+~~~~~~~~~~~~	
 	(Note: here, X1 refers to the action of setting 1st button on board with X and similar for all others)
 	A. Human VS Human:
 		1. X1 -> O2 -> X3 -> O4 -> X5 -> O6 -> X7 -> Message - Player X Won!
@@ -98,9 +107,9 @@ IV. Test Cases considered:
 		11. X5 -> O1 -> X4 -> O6 -> X7 -> O3 -> X9 -> O2 -> Player Computer Won!
 		12. X3 -> O5 -> X4 -> O2 -> X1 -> O8 -> Player Computer Won!
 		13. No Test Cases where Human Wins From AI, Only Draws / Ties Possible for the project!
-
-V. How to RUN:
-	
+=======	
+**V. How to RUN:**
+~~~~~~~~~~~~	
 	This project was developed on Visual Studio 2019 Version 16.8.2 (latest at the time of development), on .NET Framework 4.7.2 (latest at the time of development).
 	Steps:
 		A. Open VS 2019 (preferably).
@@ -110,5 +119,5 @@ V. How to RUN:
 		E. Open.
 		F. Move to next step if the Project TicTacToeWithUI is the Startup Project. Otherwise, once the Project Loads, set the Project TicTacToeWithUI as Startup Project by doing a right-click on the Project TicTacToeWithUI and clicking on "Set as Startup Project".
 		G. Press F5 or Click on Start. The game has launched.
-
-Algorithmic and Understandability Reference of the Human VS Computer - https://playtictactoe.org/.
+~~~~~~~~~~~~
+Algorithmic and Understandability Reference of the **Human VS Computer** - `Play Tic-Tac-Toe <https://playtictactoe.org>`_
