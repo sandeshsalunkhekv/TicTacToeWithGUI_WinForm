@@ -40,9 +40,9 @@ The approach has been divided into 5 steps:
 (Shown Below)
 If
 
-	X \_\_ \_\_<hr />\_\_ \_\_ \_\_<hr />\_\_\_\_ \_\_<hr />\_\_ \_\_ X
-	\_\_ \_\_ \_\_<hr />\_\_ \_\_ \_\_<hr />\_\_ \_\_ \_\_<hr />\_\_ \_\_ \_\_
-	\_\_ \_\_ \_\_<hr />X\_\_ \_\_<hr />\_\_ \_\_ X <hr />\_\_ \_\_ \_\_
+	X \_\_ \_\_ \t \_\_ \_\_ \_\_ \t \_\_\_\_ \_\_ \t \_\_ \_\_ X
+	\_\_ \_\_ \_\_ \t \_\_ \_\_ \_\_ \t \_\_ \_\_ \_\_ \t \_\_ \_\_ \_\_
+	\_\_ \_\_ \_\_ \t X\_\_ \_\_ \t \_\_ \_\_ X  \t \_\_ \_\_ \_\_
 	Then go for below positions in order to avoid the diagnoal cases even before they take shape.
 	\_\_ \_\_ \_\_
 	\_\_ :: \_\_
