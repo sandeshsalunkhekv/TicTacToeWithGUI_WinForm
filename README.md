@@ -25,15 +25,10 @@ As a part of the solution, there are 5 forms in all, namely - Introduction, Rule
 ------------
 ## II. Talking About the Thought-Process:
 ------------
-	In Player VS Player Mode, it is simple and straight forward, the turn switches after each player makes a move and before switching, we check for a winner. If there are consecutive 3 Xs or Os in a row, a column or in any of the diagonals,
-	then we consider it as a win, and display a message that "Player X Won!" or ""Player O Won!" depending upon who has won, and if total number of moves for that game is equal to 9 and still noone has won, it's a draw and display a message that states "This Game ended in a DRAW!".
-	
-In Player VS Computer Mode, there is an Algorithm known as MiniMax Algorithm, which checks for the current state of the board,
-	goes on to the end points where all the board elements will be filled for all the possible moves and return a score depending upon who wins for that particular move to the previous level.
-	This helps us to analyze the current as well as future scenarios that might be occuring depending upon player's moves if he/she plays optimally (i.e., tries to win the game, or draw).
-
+In Player VS Player Mode, it is simple and straight forward, the turn switches after each player makes a move and before switching, we check for a winner. If there are consecutive 3 Xs or Os in a row, a column or in any of the diagonals, then we consider it as a win, and display a message that "Player X Won!" or ""Player O Won!" depending upon who has won, and if total number of moves for that game is equal to 9 and still noone has won, it's a draw and display a message that states "This Game ended in a DRAW!".
+In Player VS Computer Mode, there is an Algorithm known as MiniMax Algorithm, which checks for the current state of the board, goes on to the end points where all the board elements will be filled for all the possible moves and return a score depending upon who wins for that particular move to the previous level. This helps us to analyze the current as well as future scenarios that might be occuring depending upon player's moves if he/she plays optimally (i.e., tries to win the game, or draw).
 The MiniMax Algorithm is a very time-expensive algorithm, and the time complexity is too much, so I have modified the approach a little bit, and have my own way of approaching to solve this problem, which is discussed below.
-	The approach has been divided into 5 steps:
+The approach has been divided into 5 steps:
 	* Check for A Win :-
 			      If computer is one move away from a win, then the next move computer needs to perform is just that desired move, so here we just check whether there are 2 consecutive Os in a row, column or any of the diagonals.
 			      If we encounter one, then we make a move by marking the third one as O if it has not been marked earlier.
