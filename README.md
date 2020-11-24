@@ -15,15 +15,12 @@ I. Talking About the UI:
 	B. RulesForTicTacToe - Here, we state all the rulesand basic scenarios of playing the Tic-Tac-Toe game.
 	C. TicTacToeLauncherForm - Here, we ask user to input the names for both the Players and if not entered player 1 name, the game will default it to X (keep the Player 2 blank if he/she wants to play against computer).
 	D. TicTacToeMainForm - Here, the real game begins. We have 9 Buttons for the Game-Board, a Menu Strip that has 2 sub-menu strips (Game, Help). In Game Sub-Menu Strip, we have options - New Game, Reset Scores and Exit.
-        	               In Help, we just show About, where a MessageBox is launched with reference to Sandesh Salunkhe's (i.e. me) LinkedIn Profile.
-                	       Then there is a button showing "Switch to Player VS Player" or "Switch to Player VS Computer" as the text.
-	                       If you are playing in Player VS Computer Mode, then on click, you will be asked for player names through AcceptPlayerNames form and the text will change to Switch to Player VS Computer.
-        	               If you are playing in Player VS Player Mode, then on click, the game will switch to Player VS Computer Mode and the text will change to Switch to Player VS Player.
-	E. AcceptPlayerNames - Here, similar to TicTacToeLauncherForm, we have the text input fields for player 1 and player 2 names, but if you don't enter anything into either these text fields,
-        	               default names for player 1 and player 2 (i.e., X and O respectively) will be chosen.
-
+In Help, we just show About, where a MessageBox is launched with reference to Sandesh Salunkhe's (i.e. me) LinkedIn Profile.
+Then there is a button showing "Switch to Player VS Player" or "Switch to Player VS Computer" as the text.
+If you are playing in Player VS Computer Mode, then on click, you will be asked for player names through AcceptPlayerNames form and the text will change to Switch to Player VS Computer.
+If you are playing in Player VS Player Mode, then on click, the game will switch to Player VS Computer Mode and the text will change to Switch to Player VS Player.
+	E. AcceptPlayerNames - Here, similar to TicTacToeLauncherForm, we have the text input fields for player 1 and player 2 names, but if you don't enter anything into either these text fields, default names for player 1 and player 2 (i.e., X and O respectively) will be chosen.
 	On the TicTacToeMainForm, there are labels that show whose turn it is, how many games each player won and how many were draws (tie in a game), which gets updated after each game ends.
-
 II. Talking About the Thought-Process:
 	In Player VS Player Mode, it is simple and straight forward, the turn switches after each player makes a move and before switching, we check for a winner. If there are consecutive 3 Xs or Os in a row, a column or in any of the diagonals,
 	then we consider it as a win, and display a message that "Player X Won!" or ""Player O Won!" depending upon who has won, and if total number of moves for that game is equal to 9 and still noone has won, it's a draw and display a message that states "This Game ended in a DRAW!".
