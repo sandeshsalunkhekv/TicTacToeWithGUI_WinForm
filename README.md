@@ -12,9 +12,9 @@ NOTE:
 ~~~~~~~~~~~~
 	Created a C# Project(.NET Framework 4.7.2) for the above problem, with the User Interface being implemented using Windows Forms (Winforms).
 	As a part of the solution, there are 5 forms in all, namely - Introduction, RulesForTicTacToe, TicTacToeLauncherForm, TicTacToeMainForm, & AcceptPlayerNames.
-	* Introduction - Here, we give a brief introduction about the Tic-Tac-Toe game.
-	* RulesForTicTacToe - Here, we state all the rulesand basic scenarios of playing the Tic-Tac-Toe game.
-	* TicTacToeLauncherForm - Here, we ask user to input the names for both the Players and if not entered player 1 name, the game will default it to X (keep the Player 2 blank if he/she wants to play against computer).
+	. Introduction - Here, we give a brief introduction about the Tic-Tac-Toe game.
+	. RulesForTicTacToe - Here, we state all the rulesand basic scenarios of playing the Tic-Tac-Toe game.
+	. TicTacToeLauncherForm - Here, we ask user to input the names for both the Players and if not entered player 1 name, the game will default it to X (keep the Player 2 blank if he/she wants to play against computer).
 	* TicTacToeMainForm - Here, the real game begins. We have 9 Buttons for the Game-Board, a Menu Strip that has 2 sub-menu strips (Game, Help). In Game Sub-Menu Strip, we have options - New Game, Reset Scores and Exit.
         	               In Help, we just show About, where a MessageBox is launched with reference to Sandesh Salunkhe's (i.e. me) LinkedIn Profile.
                 	       Then there is a button showing "Switch to Player VS Player" or "Switch to Player VS Computer" as the text.
