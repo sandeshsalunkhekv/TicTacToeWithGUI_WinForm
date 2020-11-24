@@ -1,6 +1,7 @@
 **Challenge Name and Description :- Tic-Tac-Toe game - implement the game with the user interface of your choice. Should include human vs human and human vs machine mode.**
 
 **Solution:**
+
 ------------
 NOTE:
 	Assumptions:
@@ -27,7 +28,6 @@ Created a C# Project(.NET Framework 4.7.2) for the above problem, with the User 
 
 ------------
 **II. Talking About the Thought-Process:**
-
 ------------
 	In Player VS Player Mode, it is simple and straight forward, the turn switches after each player makes a move and before switching, we check for a winner. If there are consecutive 3 Xs or Os in a row, a column or in any of the diagonals,
 	then we consider it as a win, and display a message that "Player X Won!" or ""Player O Won!" depending upon who has won, and if total number of moves for that game is equal to 9 and still noone has won, it's a draw and display a message that states "This Game ended in a DRAW!".
@@ -75,14 +75,12 @@ The MiniMax Algorithm is a very time-expensive algorithm, and the time complexit
 
 ------------
 **III. Contents:**
-
 ------------
 	This Submission consist of 2 projects - TicTacToeWithUI, and TicTacToeWithUI.Tests.
 	TicTacToeWithUI has the above mentioned files as discussed in Part I (Talking About the UI), and TicTacToeWithUI.Tests contains the Unit Tests built and run for all testable units (methods) for the TicTacToeWithUI Project.
 
 ------------
 **IV. Test Cases considered:**
-
 ------------
 	(Note: here, X1 refers to the action of setting 1st button on board with X and similar for all others)
 	* Human VS Human:
@@ -111,7 +109,6 @@ The MiniMax Algorithm is a very time-expensive algorithm, and the time complexit
 
 ------------
 **V. How to RUN:**
-
 ------------
 	This project was developed on Visual Studio 2019 Version 16.8.2 (latest at the time of development), on .NET Framework 4.7.2 (latest at the time of development).
 	Steps:
