@@ -1,6 +1,3 @@
-.. -*- mode: rst -*-
-.. image:: doc/logos/scikit-learn-logo.png
-
 **Challenge Name and Description :- Tic-Tac-Toe game - implement the game with the user interface of your choice. Should include human vs human and human vs machine mode.**
 
 **Solution:**
