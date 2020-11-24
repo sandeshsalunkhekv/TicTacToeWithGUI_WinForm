@@ -2,7 +2,7 @@
 
 # Solution:
 ------------
-NOTE:
+**NOTE:**
 	Assumptions:
 		* X gets to play the first Move, and in case of Player VS Computer, Player gets to play first move followed By Computer who will mark all its moves by O.
 		* Players will input only their first names, and none of the player names will be "Computer", as we have used it for player 2 while programming it for Player VS Computer Mode.
