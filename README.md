@@ -39,16 +39,16 @@ The approach has been divided into 5 steps:
 1. If any of the corners occupied by X:	Try to return Centre of the Board if not marked earlier.
 (Shown Below)
 
-	X  __ __    __ __ __    __ __ __    __ __ X              __ __ __
-    If  __ __ __ or __ __ __ or __ __ __ or __ __ __ then go for __ :: __     positions in order to avoid the diagnoal cases even before they take shape.
+	X  __ __    __ __ __    __ __ __    __ __ X              __ __ __<br />
+    If  __ __ __ or __ __ __ or __ __ __ or __ __ __ then go for __ :: __     positions in order to avoid the diagnoal cases even before they take shape.<br />
 	__ __ __    X  __ __    __ __ X     __ __ __             __ __ __
 
 1. If Diagonally Opposite buttons marked as X and centre marked as O:	Try to return Mid-element of any of the outer Row/Column if not marked earlier.
 If any 2 opposite corners occupied by Player 1 (X) and the center occupied by O, go for middle of outer rows or columns.
 	
 	
-	X  __ __    __ __ X              __ :: __
-    If  __ O  __ or __ O  __ then go for :: __ ::     positions in order to block the L shape the Player 1 (X) is planning to form.
+	X  __ __    __ __ X              __ :: __<br />
+    If  __ O  __ or __ O  __ then go for :: __ ::     positions in order to block the L shape the Player 1 (X) is planning to form.<br />
 	__ __ X     X  __ __             __ :: __
 	
 1. If one Mid-Row and adjacent Mid-Column marked as X: Try to return the adjacent common corner if not marked earlier otherwise try to return centre of the board if not marked earlier.
