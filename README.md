@@ -1,4 +1,4 @@
-<img src="TicTacToeWithUI/logos/tictactoe_1.jpg"
+<img src="TicTacToeWithUI/logos/tictactoe_1_low_reso.jpg"
      alt="Tic-Tac-Toe icon"
      style="float: left; margin-right: 10px;" />
 <br />
