@@ -8,7 +8,7 @@ Assumptions:
 * Players will input only their first names, and none of the player names will be "Computer", as we have used it for player 2 while programming it for Player VS Computer Mode.
 * At your end, you also work on latest framework, or at least at .NET Framework 4.5+, as this project is developed on .NET Framework 4.7.2.
 ------------
-## **I. Talking About the UI:**
+## I. Talking About the UI:
 ------------
 Created a C# Project(.NET Framework 4.7.2) for the above problem, with the User Interface being implemented using Windows Forms (Winforms).
 As a part of the solution, there are 5 forms in all, namely - Introduction, RulesForTicTacToe, TicTacToeLauncherForm, TicTacToeMainForm, & AcceptPlayerNames.
@@ -23,7 +23,7 @@ As a part of the solution, there are 5 forms in all, namely - Introduction, Rule
 	On the TicTacToeMainForm, there are labels that show whose turn it is, how many games each player won and how many were draws (tie in a game), which gets updated after each game ends.
 * AcceptPlayerNames - Here, similar to TicTacToeLauncherForm, we have the text input fields for player 1 and player 2 names, but if you don't enter anything into either these text fields, default names for player 1 and player 2 (i.e., X and O respectively) will be chosen.
 ------------
-**II. Talking About the Thought-Process:**
+## II. Talking About the Thought-Process:
 ------------
 	In Player VS Player Mode, it is simple and straight forward, the turn switches after each player makes a move and before switching, we check for a winner. If there are consecutive 3 Xs or Os in a row, a column or in any of the diagonals,
 	then we consider it as a win, and display a message that "Player X Won!" or ""Player O Won!" depending upon who has won, and if total number of moves for that game is equal to 9 and still noone has won, it's a draw and display a message that states "This Game ended in a DRAW!".
@@ -69,12 +69,12 @@ The MiniMax Algorithm is a very time-expensive algorithm, and the time complexit
 	* Check for any Open Space :-
 			      If none of the above cases satisfy, then the computer will just choose first open or space available, and mark it as O.
 ------------
-**III. Contents:**
+## III. Contents:
 ------------
 This Submission consist of 2 projects - TicTacToeWithUI, and TicTacToeWithUI.Tests.
 	TicTacToeWithUI has the above mentioned files as discussed in Part I (Talking About the UI), and TicTacToeWithUI.Tests contains the Unit Tests built and run for all testable units (methods) for the TicTacToeWithUI Project.
 ------------
-**IV. Test Cases considered:**
+## IV. Test Cases considered:
 ------------
 (Note: here, X1 refers to the action of setting 1st button on board with X and similar for all others)
 	* Human VS Human:
@@ -101,7 +101,7 @@ This Submission consist of 2 projects - TicTacToeWithUI, and TicTacToeWithUI.Tes
 		12. X3 -> O5 -> X4 -> O2 -> X1 -> O8 -> Player Computer Won!
 		13. No Test Cases where Human Wins From AI, Only Draws / Ties Possible for the project!
 ------------
-**V. How to RUN:**
+## V. How to RUN:
 ------------
 This project was developed on Visual Studio 2019 Version 16.8.2 (latest at the time of development), on .NET Framework 4.7.2 (latest at the time of development).
 	Steps:
