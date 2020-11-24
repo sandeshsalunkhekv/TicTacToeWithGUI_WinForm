@@ -40,9 +40,14 @@ The approach has been divided into 5 steps:
 (Shown Below)
 If
 
-	X  __ __    __ __ __    __ __ __    __ __ X              __ __ __<br />
-	__ __ __ or __ __ __ or __ __ __ or __ __ __ then go for __ :: __     positions in order to avoid the diagnoal cases even before they take shape.<br />
-	__ __ __    X  __ __    __ __ X     __ __ __             __ __ __<br />
+	X  __ __<hr />__ __ __<hr />__ __ __<hr />__ __ X <br />
+	__ __ __<hr />__ __ __<hr />__ __ __<hr />__ __ __<br />
+	__ __ __<hr />X  __ __<hr />__ __ X <hr />__ __ __<br />
+	Then go for below positions in order to avoid the diagnoal cases even before they take shape.<br />
+	__ __ __<br />
+	__ :: __<br />
+	__ __ __<br />
+	
 
 1. If Diagonally Opposite buttons marked as X and centre marked as O:	Try to return Mid-element of any of the outer Row/Column if not marked earlier.
 If any 2 opposite corners occupied by Player 1 (X) and the center occupied by O, go for middle of outer rows or columns.
