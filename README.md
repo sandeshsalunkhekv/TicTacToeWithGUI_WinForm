@@ -1,3 +1,6 @@
+<img src="markdownmonstericon.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
 **Challenge Name and Description :- Tic-Tac-Toe game - implement the game with the user interface of your choice. Should include human vs human and human vs machine mode.**
 
 # Solution:
