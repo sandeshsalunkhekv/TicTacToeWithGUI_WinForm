@@ -11,18 +11,17 @@ Assumptions:
 **I. Talking About the UI:**
 ------------
 Created a C# Project(.NET Framework 4.7.2) for the above problem, with the User Interface being implemented using Windows Forms (Winforms).
-	As a part of the solution, there are 5 forms in all, namely - Introduction, RulesForTicTacToe, TicTacToeLauncherForm, TicTacToeMainForm, & AcceptPlayerNames.
-	. Introduction - Here, we give a brief introduction about the Tic-Tac-Toe game.
-	. RulesForTicTacToe - Here, we state all the rulesand basic scenarios of playing the Tic-Tac-Toe game.
-	. TicTacToeLauncherForm - Here, we ask user to input the names for both the Players and if not entered player 1 name, the game will default it to X (keep the Player 2 blank if he/she wants to play against computer).
-	* TicTacToeMainForm - Here, the real game begins. We have 9 Buttons for the Game-Board, a Menu Strip that has 2 sub-menu strips (Game, Help). In Game Sub-Menu Strip, we have options - New Game, Reset Scores and Exit.
-        	               In Help, we just show About, where a MessageBox is launched with reference to Sandesh Salunkhe's (i.e. me) LinkedIn Profile.
-                	       Then there is a button showing "Switch to Player VS Player" or "Switch to Player VS Computer" as the text.
-	                       If you are playing in Player VS Computer Mode, then on click, you will be asked for player names through AcceptPlayerNames form and the text will change to Switch to Player VS Computer.
-        	               If you are playing in Player VS Player Mode, then on click, the game will switch to Player VS Computer Mode and the text will change to Switch to Player VS Player.
-		On the TicTacToeMainForm, there are labels that show whose turn it is, how many games each player won and how many were draws (tie in a game), which gets updated after each game ends.
-	* AcceptPlayerNames - Here, similar to TicTacToeLauncherForm, we have the text input fields for player 1 and player 2 names, but if you don't enter anything into either these text fields,
-        	               default names for player 1 and player 2 (i.e., X and O respectively) will be chosen.
+As a part of the solution, there are 5 forms in all, namely - Introduction, RulesForTicTacToe, TicTacToeLauncherForm, TicTacToeMainForm, & AcceptPlayerNames.
+* Introduction - Here, we give a brief introduction about the Tic-Tac-Toe game.
+* RulesForTicTacToe - Here, we state all the rulesand basic scenarios of playing the Tic-Tac-Toe game.
+* TicTacToeLauncherForm - Here, we ask user to input the names for both the Players and if not entered player 1 name, the game will default it to X (keep the Player 2 blank if he/she wants to play against computer).
+* TicTacToeMainForm - Here, the real game begins. We have 9 Buttons for the Game-Board, a Menu Strip that has 2 sub-menu strips (Game, Help). In Game Sub-Menu Strip, we have options - New Game, Reset Scores and Exit.
+	In Help, we just show About, where a MessageBox is launched with reference to Sandesh Salunkhe's (i.e. me) LinkedIn Profile.
+        Then there is a button showing "Switch to Player VS Player" or "Switch to Player VS Computer" as the text.
+	If you are playing in Player VS Computer Mode, then on click, you will be asked for player names through AcceptPlayerNames form and the text will change to Switch to Player VS Computer.
+        If you are playing in Player VS Player Mode, then on click, the game will switch to Player VS Computer Mode and the text will change to Switch to Player VS Player.
+	On the TicTacToeMainForm, there are labels that show whose turn it is, how many games each player won and how many were draws (tie in a game), which gets updated after each game ends.
+* AcceptPlayerNames - Here, similar to TicTacToeLauncherForm, we have the text input fields for player 1 and player 2 names, but if you don't enter anything into either these text fields, default names for player 1 and player 2 (i.e., X and O respectively) will be chosen.
 ------------
 **II. Talking About the Thought-Process:**
 ------------
