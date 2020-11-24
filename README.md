@@ -100,13 +100,13 @@ This Submission consist of 2 projects - TicTacToeWithUI, and TicTacToeWithUI.Tes
 ------------
 This project was developed on Visual Studio 2019 Version 16.8.2 (latest at the time of development), on .NET Framework 4.7.2 (latest at the time of development).
 Steps:
-	1. Open VS 2019 (preferably).
-	1. Click on Open a Project or Solution
-	1. Navigate to the Solution Location
-	1. Select .sln file.
-	1. Open.
-	1. Move to next step if the Project TicTacToeWithUI is the Startup Project. Otherwise, once the Project Loads, set the Project TicTacToeWithUI as Startup Project by doing a right-click on the Project TicTacToeWithUI and clicking on "Set as Startup Project".
-	1. Press F5 or Click on Start. The game has launched.
+1. Open VS 2019 (preferably).
+1. Click on Open a Project or Solution
+1. Navigate to the Solution Location
+1. Select .sln file.
+1. Open.
+1. Move to next step if the Project TicTacToeWithUI is the Startup Project. Otherwise, once the Project Loads, set the Project TicTacToeWithUI as Startup Project by doing a right-click on the Project TicTacToeWithUI and clicking on "Set as Startup Project".
+1. Press F5 or Click on Start. The game has launched.
 
 -----------
 Algorithmic and Understandability Reference of the **Human VS Computer** - `Play Tic-Tac-Toe <https://playtictactoe.org>`_
