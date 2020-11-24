@@ -36,33 +36,42 @@ The approach has been divided into 5 steps:
 	We check the similar condition, but now this time we check whether X is one move away from a win or not.
 	If so, we mark the third element as O if it is not marked earlier. This blocks X's Win!
 * We check for Special Cases:- (the part of MiniMax which is simplified below)
-	1. If any of the corners occupied by X:	Try to return Centre of the Board if not marked earlier. (Shown Below)
+1. If any of the corners occupied by X:	Try to return Centre of the Board if not marked earlier.
+(Shown Below)
+
 	X  __ __    __ __ __    __ __ __    __ __ X              __ __ __
-If	__ __ __ or __ __ __ or __ __ __ or __ __ __ then go for __ :: __     positions in order to avoid the diagnoal cases even before they take shape.
+    If  __ __ __ or __ __ __ or __ __ __ or __ __ __ then go for __ :: __     positions in order to avoid the diagnoal cases even before they take shape.
 	__ __ __    X  __ __    __ __ X     __ __ __             __ __ __
-	1. If Diagonally Opposite buttons marked as X and centre marked as O:	Try to return Mid-element of any of the outer Row/Column if not marked earlier.
+
+1. If Diagonally Opposite buttons marked as X and centre marked as O:	Try to return Mid-element of any of the outer Row/Column if not marked earlier.
 	If any 2 opposite corners occupied by Player 1 (X) and the center occupied by O, go for middle of outer rows or columns
+	
 	X  __ __    __ __ X              __ :: __
-If	__ O  __ or __ O  __ then go for :: __ ::     positions in order to block the L shape the Player 1 (X) is planning to form.
+    If  __ O  __ or __ O  __ then go for :: __ ::     positions in order to block the L shape the Player 1 (X) is planning to form.
 	__ __ X     X  __ __             __ :: __
-	1. If one Mid-Row and adjacent Mid-Column marked as X: Try to return the adjacent common corner if not marked earlier otherwise try to return centre of the board if not marked earlier.
-	If 2 diagnoally adjacent (not lying on the diagonal) are marked X by Player 1, block the corner in common to the row and column
+	
+1. If one Mid-Row and adjacent Mid-Column marked as X: Try to return the adjacent common corner if not marked earlier otherwise try to return centre of the board if not marked earlier.
+If 2 diagnoally adjacent (not lying on the diagonal) are marked X by Player 1, block the corner in common to the row and column.
+
 	__ X  __    __ X  __    __ __ __    __ __ __             :: __ ::
-If	X  __ __ or __ __ X  or __ __ X  or X  __ __ then go for __ :: __     positions in order to block the small L shape the Player 1 (X) is planning to form at the corner place(s).
+    If  X  __ __ or __ __ X  or __ __ X  or X  __ __ then go for __ :: __     positions in order to block the small L shape the Player 1 (X) is planning to form at the corner place(s).
 	__ __ __    __ __ __    __ X  __    __ X  __             :: __ ::
-	1. If only one Mid-Row or Mid-Column is marked as X:			Try to return centre of the board if not marked earlier, otherwise try to return any of the end-points of Mid-Column (if Mid-Row was marked as X) or Mid-Row (if Mid-Column was marked as X).
-	If any of the non-central row/column's mid is marked as X by Player 1, mark center of the tic tac toe board as visited with O or mark any of the central row or central column's element as visited with O to prevent the inverse-L that Player 1 is planning to form at middle of tic tac toe board
+
+1. If only one Mid-Row or Mid-Column is marked as X:			Try to return centre of the board if not marked earlier, otherwise try to return any of the end-points of Mid-Column (if Mid-Row was marked as X) or Mid-Row (if Mid-Column was marked as X).
+If any of the non-central row/column's mid is marked as X by Player 1, mark center of the tic tac toe board as visited with O or mark any of the central row or central column's element as visited with O to prevent the inverse-L that Player 1 is planning to form at middle of tic tac toe board.
+	
 	__ X  __    __ __ __    __ __ __    __ __ __             __ :: __
-If	__ __ __ or __ __ X  or __ __ __ or X  __ __ then go for :: :: ::
+    If  __ __ __ or __ __ X  or __ __ __ or X  __ __ then go for :: :: ::
 	__ __ __    __ __ __    __ X  __    __ __ __             __ :: __
-	1. Otherwise return null
+1. Otherwise return null
 * Check for Corners:-
 If the computer has already marked any of the corners as O, then it checks for the next suitable corner which it can mark as O, prioritizing the Diagonally Opposite button, then the current Row opposite Corner and at the end current Column Opposite Corner, otherwise return the first available (not marked) corner.
+
 	O  __ __    __ __ O     __ __ __    __ __ __
-	If	__ __ __ or __ __ __ or __ __ __ or __ __ __ then select opposite corner if not marked earlier, otherwise go for same row opposite corner if not marked earlier or else try for same column opposite corner if not marked earlier, or go for the first available Corner.
+    If  __ __ __ or __ __ __ or __ __ __ or __ __ __ then select opposite corner if not marked earlier, otherwise go for same row opposite corner if not marked earlier or else try for same column opposite corner if not marked earlier, or go for the first available Corner.
 	__ __ __    __ __ __    __ __ O     O  __ __
 * Check for any Open Space :-
-			      If none of the above cases satisfy, then the computer will just choose first open or space available, and mark it as O.
+If none of the above cases satisfy, then the computer will just choose first open or space available, and mark it as O.
 ------------
 ## III. Contents:
 ------------
