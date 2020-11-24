@@ -12,16 +12,16 @@ NOTE:
 ~~~~~~~~~~~~
 	Created a C# Project(.NET Framework 4.7.2) for the above problem, with the User Interface being implemented using Windows Forms (Winforms).
 	As a part of the solution, there are 5 forms in all, namely - Introduction, RulesForTicTacToe, TicTacToeLauncherForm, TicTacToeMainForm, & AcceptPlayerNames.
-	A. Introduction - Here, we give a brief introduction about the Tic-Tac-Toe game.
-	B. RulesForTicTacToe - Here, we state all the rulesand basic scenarios of playing the Tic-Tac-Toe game.
-	C. TicTacToeLauncherForm - Here, we ask user to input the names for both the Players and if not entered player 1 name, the game will default it to X (keep the Player 2 blank if he/she wants to play against computer).
-	D. TicTacToeMainForm - Here, the real game begins. We have 9 Buttons for the Game-Board, a Menu Strip that has 2 sub-menu strips (Game, Help). In Game Sub-Menu Strip, we have options - New Game, Reset Scores and Exit.
+	* Introduction - Here, we give a brief introduction about the Tic-Tac-Toe game.
+	* RulesForTicTacToe - Here, we state all the rulesand basic scenarios of playing the Tic-Tac-Toe game.
+	* TicTacToeLauncherForm - Here, we ask user to input the names for both the Players and if not entered player 1 name, the game will default it to X (keep the Player 2 blank if he/she wants to play against computer).
+	* TicTacToeMainForm - Here, the real game begins. We have 9 Buttons for the Game-Board, a Menu Strip that has 2 sub-menu strips (Game, Help). In Game Sub-Menu Strip, we have options - New Game, Reset Scores and Exit.
         	               In Help, we just show About, where a MessageBox is launched with reference to Sandesh Salunkhe's (i.e. me) LinkedIn Profile.
                 	       Then there is a button showing "Switch to Player VS Player" or "Switch to Player VS Computer" as the text.
 	                       If you are playing in Player VS Computer Mode, then on click, you will be asked for player names through AcceptPlayerNames form and the text will change to Switch to Player VS Computer.
         	               If you are playing in Player VS Player Mode, then on click, the game will switch to Player VS Computer Mode and the text will change to Switch to Player VS Player.
 		On the TicTacToeMainForm, there are labels that show whose turn it is, how many games each player won and how many were draws (tie in a game), which gets updated after each game ends.
-	E. AcceptPlayerNames - Here, similar to TicTacToeLauncherForm, we have the text input fields for player 1 and player 2 names, but if you don't enter anything into either these text fields,
+	* AcceptPlayerNames - Here, similar to TicTacToeLauncherForm, we have the text input fields for player 1 and player 2 names, but if you don't enter anything into either these text fields,
         	               default names for player 1 and player 2 (i.e., X and O respectively) will be chosen.
 ~~~~~~~~~~~~
 **II. Talking About the Thought-Process:**
@@ -35,13 +35,13 @@ NOTE:
 
 	The MiniMax Algorithm is a very time-expensive algorithm, and the time complexity is too much, so I have modified the approach a little bit, and have my own way of approaching to solve this problem, which is discussed below.
 	The approach has been divided into 5 steps:
-	A. Check for A Win :-
+	* Check for A Win :-
 			      If computer is one move away from a win, then the next move computer needs to perform is just that desired move, so here we just check whether there are 2 consecutive Os in a row, column or any of the diagonals.
 			      If we encounter one, then we make a move by marking the third one as O if it has not been marked earlier.
-	B. Block X's Win if it is to win:-
+	* Block X's Win if it is to win:-
 			      We check the similar condition, but now this time we check whether X is one move away from a win or not.
 			      If so, we mark the third element as O if it is not marked earlier. This blocks X's Win!
-	C. We check for Special Cases:- (the part of MiniMax which is simplified below)
+	* We check for Special Cases:- (the part of MiniMax which is simplified below)
 			      a. If any of the corners occupied by X:					Try to return Centre of the Board if not marked earlier. (Shown Below)
 
 	        	      		X  __ __    __ __ __    __ __ __    __ __ X              __ __ __
@@ -70,12 +70,12 @@ NOTE:
 		              		__ __ __    __ __ __    __ X  __    __ __ __             __ :: __
 
 			      e. Otherwise return null
-	D. Check for Corners:-
+	* Check for Corners:-
 			      If the computer has already marked any of the corners as O, then it checks for the next suitable corner which it can mark as O, prioritizing the Diagonally Opposite button, then the current Row opposite Corner and at the end current Column Opposite Corner, otherwise return the first available (not marked) corner.
 			            	O  __ __    __ __ O     __ __ __    __ __ __
 			            If	__ __ __ or __ __ __ or __ __ __ or __ __ __ then select opposite corner if not marked earlier, otherwise go for same row opposite corner if not marked earlier or else try for same column opposite corner if not marked earlier, or go for the first available Corner.
 			            	__ __ __    __ __ __    __ __ O     O  __ __
-	E. Check for any Open Space :-
+	* Check for any Open Space :-
 			      If none of the above cases satisfy, then the computer will just choose first open or space available, and mark it as O.
 ~~~~~~~~~~~~
 **III. Contents:**
@@ -86,7 +86,7 @@ NOTE:
 **IV. Test Cases considered:**
 ~~~~~~~~~~~~
 	(Note: here, X1 refers to the action of setting 1st button on board with X and similar for all others)
-	A. Human VS Human:
+	* Human VS Human:
 		1. X1 -> O2 -> X3 -> O4 -> X5 -> O6 -> X7 -> Message - Player X Won!
 		2. X2 -> O1 -> X3 -> O5 -> X6 -> O9 -> Message - Player O Won!
 		3. X3 -> O2 -> X1 -> O5 -> X8 -> O6 -> X4 -> O7 -> X9 -> Message - The game ended in a DRAW!
@@ -95,7 +95,7 @@ NOTE:
 		6. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O9 -> X6 -> Message - Player X Won!
 		7. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O6 -> X9 -> Message - The game ended in a DRAW!
 		8. X2 -> O1 -> X3 -> O7 -> X4 -> O9 -> O8 -> Player O Won!
-	B. Human VS Computer/Machine:
+	* Human VS Computer/Machine:
 		 1. X1 -> O5 -> X2 -> O3 -> X7 -> O4 -> X6 -> O9 -> X8 -> Message - The game ended in a DRAW!
 		 2. X5 -> O1 -> X7 -> O3 -> X2 -> O8 -> X4 -> O6 -> X9 -> Message - The game ended in a DRAW!
 		 3. X2 -> O5 -> X4 -> O1 -> X9 -> O3 -> X7 -> O8 -> X6 -> Message - The game ended in a DRAW!
