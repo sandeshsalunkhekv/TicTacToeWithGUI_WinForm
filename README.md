@@ -40,13 +40,13 @@ The approach has been divided into 5 steps:
 (Shown Below)
 If
 
-	X  __ __<hr />__ __ __<hr />__ __ __<hr />__ __ X <br />
-	__ __ __<hr />__ __ __<hr />__ __ __<hr />__ __ __<br />
-	__ __ __<hr />X  __ __<hr />__ __ X <hr />__ __ __<br />
+	X \_\_ \_\_<hr />\_\_ \_\_ \_\_<hr />\_\_\_\_ \_\_<hr />\_\_ \_\_ X <br />
+	\_\_ \_\_ \_\_<hr />\_\_ \_\_ \_\_<hr />\_\_ \_\_ \_\_<hr />\_\_ \_\_ \_\_<br />
+	\_\_ \_\_ \_\_<hr />X\_\_ \_\_<hr />\_\_ \_\_ X <hr />\_\_ \_\_ \_\_<br />
 	Then go for below positions in order to avoid the diagnoal cases even before they take shape.<br />
-	__ __ __<br />
-	__ :: __<br />
-	__ __ __<br />
+	\_\_ \_\_ \_\_<br />
+	\_\_ :: \_\_<br />
+	\_\_ \_\_ \_\_<br />
 	
 
 1. If Diagonally Opposite buttons marked as X and centre marked as O:	Try to return Mid-element of any of the outer Row/Column if not marked earlier.
