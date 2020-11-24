@@ -44,7 +44,8 @@ The approach has been divided into 5 steps:
 	__ __ __    X  __ __    __ __ X     __ __ __             __ __ __
 
 1. If Diagonally Opposite buttons marked as X and centre marked as O:	Try to return Mid-element of any of the outer Row/Column if not marked earlier.
-	If any 2 opposite corners occupied by Player 1 (X) and the center occupied by O, go for middle of outer rows or columns
+If any 2 opposite corners occupied by Player 1 (X) and the center occupied by O, go for middle of outer rows or columns.
+	
 	
 	X  __ __    __ __ X              __ :: __
     If  __ O  __ or __ O  __ then go for :: __ ::     positions in order to block the L shape the Player 1 (X) is planning to form.
