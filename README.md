@@ -119,4 +119,4 @@ Steps:
 1. Press F5 or Click on Start. The game has launched.
 
 -----------
-Algorithmic and Understandability Reference of the **Human VS Computer** - [Play Tic-Tac-Toe] (https://playtictactoe.org)
+Algorithmic and Understandability Reference of the **Human VS Computer** - [Play Tic-Tac-Toe](https://playtictactoe.org)
