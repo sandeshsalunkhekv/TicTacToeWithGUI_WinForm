@@ -8,7 +8,7 @@ Assumptions:
 * Players will input only their first names, and none of the player names will be "Computer", as we have used it for player 2 while programming it for Player VS Computer Mode.
 * At your end, you also work on latest framework, or at least at .NET Framework 4.5+, as this project is developed on .NET Framework 4.7.2.
 ------------
-**I. Talking About the UI:**
+## **I. Talking About the UI:**
 ------------
 Created a C# Project(.NET Framework 4.7.2) for the above problem, with the User Interface being implemented using Windows Forms (Winforms).
 As a part of the solution, there are 5 forms in all, namely - Introduction, RulesForTicTacToe, TicTacToeLauncherForm, TicTacToeMainForm, & AcceptPlayerNames.
